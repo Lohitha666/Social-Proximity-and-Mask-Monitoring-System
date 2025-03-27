@@ -22,46 +22,37 @@ cd repo-name
 pip install -r requirements.txt  
 
 # 4️⃣ Dataset Preparation  
-# The system uses an image/video dataset containing mask-wearing individuals and social distancing scenarios.  
-# If using a custom dataset, store images in the `data/` directory.  
-# Example CSV format:  
-# image_path,mask_label,distance_violated  
-# "data/img1.jpg", "No Mask", "Yes"  
-# "data/img2.jpg", "Masked", "No"  
+The system uses an image/video dataset containing mask-wearing individuals and social distancing scenarios.  
+If using a custom dataset, store images in the `data/` directory.  
+Example CSV format:  
+image_path,mask_label,distance_violated  
+"data/img1.jpg", "No Mask", "Yes"  
+"data/img2.jpg", "Masked", "No"  
 
 # 5️⃣ Run the Detection Model  
 python detect.py --source video.mp4  
-# The system will process live feeds or recorded videos and display alerts.  
+The system will process live feeds or recorded videos and display alerts.  
 
 # 6️⃣ Deploy as an API (Optional)  
-# To serve the model using Flask/FastAPI, run:  
+To serve the model using Flask/FastAPI, run:  
 python app.py  
-# Then open your browser and go to:  
-# http://127.0.0.1:5000/predict?image=your_image.jpg  
+Then open your browser and go to:  
+http://127.0.0.1:5000/predict?image=your_image.jpg  
 
 # 🎯 Features  
-# ✔️ Real-time mask detection using AI models  
-# ✔️ Social distancing monitoring using computer vision  
-# ✔️ Works with live CCTV feeds or recorded videos  
-# ✔️ Can be deployed on IoT devices (Raspberry Pi, Jetson Nano)  
-# ✔️ API support for easy integration into applications  
-
-# 📸 Output Screenshots  
-mkdir assets  
-mv your_screenshots_here assets/  
-
-# Add the screenshots in the README  
-echo '![](assets/Picture1.png)  ![](assets/Picture2.png)  
-![](assets/Picture3.png)  ![](assets/Picture4.png)  
-![](assets/Picture5.png)  ![](assets/Picture6.png)' >> README.md  
+✔️ Real-time mask detection using AI models  
+✔️ Social distancing monitoring using computer vision  
+✔️ Works with live CCTV feeds or recorded videos  
+✔️ Can be deployed on IoT devices (Raspberry Pi, Jetson Nano)  
+✔️ API support for easy integration into applications  
 
 # 🤝 Contributing  
 # Want to contribute? Follow these steps:  
-# 1. Fork the repository  
-# 2. Create a new branch:  
+1. Fork the repository  
+2. Create a new branch:  
 git checkout -b feature-branch  
-# 3. Commit your changes:  
+3. Commit your changes:  
 git commit -m "Added new feature"  
-# 4. Push the branch:  
+4. Push the branch:  
 git push origin feature-branch  
-# 5. Open a Pull Request on GitHub  
+5. Open a Pull Request on GitHub  
